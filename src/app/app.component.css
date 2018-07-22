@@ -17,5 +17,4 @@
 
 .groundMedium {
     background: linear-gradient(rgba(47,42,112,1), rgba(47,42,112,0.8)), url("../assets/car-wireframe.png") no-repeat;
-    /* background:#384570 url("../assets/car-wireframe.png"); */
 }

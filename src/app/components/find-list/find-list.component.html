@@ -1,0 +1,14 @@
+<div class="allResultsList$.cars.length !== undefined" class="wrapperList">
+    <div *ngIf="allResultsList$?.cars?.length >= 0; else moreItems">
+        <div *ngFor="let item of allResultsList$?.cars; index as i" class="bottom" fxLayout="row">
+            <div fxLayout="column" class="col-md-12" fxLayoutAlign="center center" fxFlex="100">
+                <p class="nameCar" fxLayoutAlign="center center">{{ item?.title }}</p>
+                <p class="detailsCar" fxLayoutAlign="center center">{{ item?.model }} {{ item?.brand }} {{ item?.km }} KM</p>
+            </div>
+            <div fxLayout="column" class="col-md-12" fxLayoutAlign="center center" fxFlex="100">
+                <p class="nameCar" fxLayoutAlign="center center">Celta Azul Cor de RedBull</p>
+                <p class="detailsCar" fxLayoutAlign="center center">Celta * chevrolet 106km</p>
+            </div>
+        </div>
+    </div>
+</div>

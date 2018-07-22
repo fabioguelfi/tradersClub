@@ -6,16 +6,20 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { WelcomeMessageComponent } from './components/welcome-message/welcome-message.component';
+import { FindListComponent } from './components/find-list/find-list.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    WelcomeMessageComponent
+    WelcomeMessageComponent,
+    FindListComponent
   ],
   imports: [
     BrowserModule,
     FlexLayoutModule,
-    RouterRoutingModule
+    RouterRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

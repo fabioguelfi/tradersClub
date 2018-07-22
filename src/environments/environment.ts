@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  api: 'http://tchml.tradersclub.com.br:12000/api/'
 };
 
 /*

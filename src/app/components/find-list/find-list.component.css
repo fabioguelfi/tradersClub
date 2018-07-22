@@ -1,0 +1,21 @@
+.nameCar {
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+.detailsCar {
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+.bottom {
+    border-bottom: 1px solid whitesmoke;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 30px;
+}
+
+.wrapperList {
+    max-height: 500px;
+    overflow-y: auto;
+}
