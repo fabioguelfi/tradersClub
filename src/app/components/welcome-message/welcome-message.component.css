@@ -1,0 +1,15 @@
+.findCars {
+    font-size: 60px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tradersClub {
+    font-size: 60px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boxClub {
+    background: linear-gradient(rgba(40,40,100,1), rgba(47,42,112,0.8));
+    padding: 10px;
+}

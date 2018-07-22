@@ -1,0 +1,20 @@
+.input {
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid whitesmoke;
+    font-size: 20px;
+    color: whitesmoke;
+    height: 50px;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+.button {
+    height: 50px;
+    padding: 10px;
+    background-color: whitesmoke;
+    color: grey;
+    letter-spacing: 1px;
+}
