@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { WelcomeMessageComponent } from './components/welcome-message/welcome-message.component';
 import { FindListComponent } from './components/find-list/find-list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { EditComponent } from './components/edit/edit.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     WelcomeMessageComponent,
-    FindListComponent
+    FindListComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,

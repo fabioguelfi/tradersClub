@@ -1,3 +1,4 @@
+import { Router } from "@angular/router";
 import { CrudService } from "./../../services/crud.service";
 import { Observable } from "rxjs";
 import { Component, OnInit } from "@angular/core";
@@ -9,12 +10,20 @@ import { Component, OnInit } from "@angular/core";
 })
 export class FindListComponent implements OnInit {
   public allResultsList$;
-
-  constructor(private crudService: CrudService) { }
+  public load: boolean = true;
+  constructor(private crudService: CrudService, private router: Router) { }
 
   public ngOnInit(): void {
     this.crudService.cast.subscribe(res => {
+      this.load = false;
+      setTimeout(() => {
+        this.load = true;
+      }, 1500);
       this.allResultsList$ = res;
     });
+  }
+
+  public handlerRouterEdit(keyword: string): void {
+    this.router.navigate([`edit`, encodeURI(keyword)]);
   }
 }

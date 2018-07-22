@@ -14,7 +14,13 @@ export class NavbarComponent implements OnInit {
     private crudService: CrudService
   ) { }
 
-  public ngOnInit(): void { }
+  public ngOnInit(): void { 
+    this.crudService.findAll(``).subscribe(
+      res => { },
+      err => console.log(err),
+      () => { }
+    )
+  }
 
   private findList(): void {
     this.router.navigateByUrl("findList");
