@@ -9,6 +9,7 @@ import { WelcomeMessageComponent } from './components/welcome-message/welcome-me
 import { FindListComponent } from './components/find-list/find-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EditComponent } from './components/edit/edit.component';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { EditComponent } from './components/edit/edit.component';
     BrowserModule,
     FlexLayoutModule,
     RouterRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

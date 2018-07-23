@@ -1,26 +1,27 @@
-<div>
-  <form novalidate>
-    <div>
-      <input type="text" placeholder="title carro">
-    </div>
-    <div>
-      <input type="text" placeholder="nome carro">
-      <input type="text" placeholder="ano carro">
-    </div>
-    <div>
-      <input type="text" placeholder="cor carro">
-      <input type="text" placeholder="preco carro">
-    </div>
-    <div>
-      <input type="text" placeholder="km carro">
-    </div>
-    <div>
+<div *ngIf="car !== undefined">
+  <form [formGroup]="carform" (ngSubmit)="onSubmit(item)" novalidate *ngFor="let item of car?.cars; index as i" novalidate>
+    <div formGroupName="propsCar" novalidate>
       <div>
-        <button type="button">remover</button>
-        <button type="button">cancelar</button>
+        <input formControlName="title" type="text" [value]="item?.title">
       </div>
       <div>
-        <button type="button">salvar</button>
+        <input formControlName="model" type="text" [value]="item?.model">
+        <input formControlName="year" type="text" [value]="item?.year">
+      </div>
+      <div>
+        <input formControlName="color" type="text" [value]="item?.color">
+        <input formControlName="price" type="text" [value]="item?.price">
+      </div>
+      <div>
+        <input formControlName="km" type="text" [value]="item?.km">
+      </div>
+      <div>
+        <div>
+          <button type="reset" (click)="revert()" [disabled]="carform.invalid">Resetar</button>
+        </div>
+        <div>
+          <button type="submit" [disabled]="carform.invalid">Salvar</button>
+        </div>
       </div>
     </div>
   </form>
